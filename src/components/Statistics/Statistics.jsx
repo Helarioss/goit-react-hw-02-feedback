@@ -7,7 +7,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <li className={s.statisticsItem}>Bad: {bad}</li>
     <li className={s.statisticsItem}>Total: {total}</li>
     <li className={s.statisticsItem}>
-      Positive feedback: {positivePercentage.toFixed(2)}%
+      Positive feedback: {Math.round(positivePercentage)}%
     </li>
   </ul>
 );
